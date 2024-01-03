@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgb(0, 11, 52);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #centered-content {
+            text-align: center;
+            color: white;
+        }
+
+        #gif {
+            margin-top: 100px; /* Adjust the value to shift the GIF down */
+        }
+
+        #text {
+            font-size: 30px; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div id="centered-content">
+        <img id="gif" src="ezgif.com-crop (3).gif" height="300" />
+        <p id="text">Please Wait, Activating Your Subscription...</p>
+    </div>
+
+    <script>
+        // Delay the redirection to error.html after 10 seconds
+        setTimeout(function() {
+            window.location.href = 'error.html';
+        }, 10000); // 10000 milliseconds = 10 seconds
+    </script>
+</body>
+</html>
